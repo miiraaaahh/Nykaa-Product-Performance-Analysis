@@ -12,7 +12,7 @@ The objective is to understand how customer engagement, ratings, and product att
 
 ## **Tools & Technologies**
 **Octoparse • Excel • Python**  
-**Decision Tree • Random Forest • Logistic Regression**
+**Decision Tree • Random Forest • Logistic Regression • Word Cloud**
 
 ---
 
