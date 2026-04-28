@@ -180,4 +180,43 @@ plt.title("ROC Curve")
 plt.legend()
 plt.show()
 
+# 10. TEXT ANALYSIS (WORD CLOUD)
+
+
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+import pandas as pd
+import re
+
+# load review dataset
+reviews_df = pd.read_csv("reviews_dataset.csv")
+
+# assuming you already filtered negative reviews
+# (example: reviews_df = reviews_df[reviews_df["rating"] <= 2])
+
+# clean text
+def clean_text(text):
+    text = str(text).lower()
+    text = re.sub(r"[^a-z\s]", "", text)  # remove numbers & punctuation
+    return text
+
+reviews_df["clean_reviews"] = reviews_df["review_text"].apply(clean_text)
+
+# combine all text
+all_text = " ".join(reviews_df["clean_reviews"].dropna())
+
+# generate word cloud
+wordcloud = WordCloud(
+    width=800,
+    height=400,
+    background_color="white"
+).generate(all_text)
+
+# display
+plt.figure(figsize=(10, 5))
+plt.imshow(wordcloud, interpolation="bilinear")
+plt.axis("off")
+plt.title("Word Cloud - Negative Reviews")
+plt.show()
+
 # END
