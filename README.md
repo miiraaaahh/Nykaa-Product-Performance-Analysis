@@ -38,7 +38,7 @@ The analysis combines:
 
 ---
 
-## 🧹 Data Preprocessing  
+##  Data Preprocessing  
 - Removed irrelevant columns  
 - Converted variables to numeric format  
 - Handled missing values using pricing relationships  
@@ -104,7 +104,7 @@ Frequent words such as **"shade"**, **"match"**, and **"dark"** indicate that **
 
 ---
 
-## 🔍 Key Insights  
+##  Key Insights  
 - Customer engagement is the strongest predictor of success  
 - Ratings become more reliable with higher review volume  
 - Discounts have minimal impact on performance  
@@ -129,7 +129,7 @@ Frequent words such as **"shade"**, **"match"**, and **"dark"** indicate that **
 
 ---
 
-## 🛠️ Tools & Technologies  
+##  Tools & Technologies  
 - **Python** (Pandas, NumPy)  
 - **Matplotlib, Seaborn**  
 - **Scikit-learn**  
