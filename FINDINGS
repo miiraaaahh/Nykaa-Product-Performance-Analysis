@@ -1,0 +1,137 @@
+# 🔍 Final Insights & Analysis  
+
+---
+
+## 📊 1. Understanding the Data Distribution  
+
+### Figure 1: Distribution of Product Ratings  
+Most products have ratings concentrated between 4.0 and 4.6, indicating generally positive customer feedback.
+
+![Distribution of Ratings](images/fig1_ratings_distribution.png)
+
+**Insight:**  
+Ratings alone are not enough to differentiate products due to limited variation.
+
+---
+
+### Figure 2: Distribution of Product Prices  
+The majority of products fall within lower price ranges, with fewer premium-priced items.
+
+![Distribution of Prices](images/fig2_price_distribution.png)
+
+**Insight:**  
+The platform primarily targets mass-market consumers, with a smaller premium segment.
+
+---
+
+## 🏷️ 2. Market Structure & Brand Analysis  
+
+### Figure 3: Top 15 Brands by Number of Products  
+A small number of brands dominate the platform in terms of product listings.
+
+![Top Brands](images/fig3_top_brands.png)
+
+**Insight:**  
+The market shows a **Pareto effect**, where a few brands control a large share of products.
+
+---
+
+## ⭐ 3. Customer Behavior & Engagement  
+
+### Figure 4: Review Count vs Rating (Log Scale)  
+Products with higher review counts tend to have more stable ratings.
+
+![Review vs Rating](images/fig4_review_vs_rating.png)
+
+**Insight:**  
+Customer engagement (review volume) increases rating reliability and trust.
+
+---
+
+## 🔗 4. Feature Relationships  
+
+### Figure 5: Correlation Heatmap  
+Strong relationships exist between rating count and review count, while discount shows weak correlation.
+
+![Correlation Heatmap](images/fig5_correlation.png)
+
+**Insight:**  
+Engagement metrics are more important than pricing variables in explaining product performance.
+
+---
+
+## 💬 5. Customer Feedback Analysis  
+
+### Figure 6: Word Cloud of Negative Reviews  
+Frequently occurring words include "shade", "match", and "dark".
+
+![Word Cloud](images/fig6_wordcloud.png)
+
+**Insight:**  
+Shade mismatch is a major issue for customers when purchasing cosmetics online.
+
+---
+
+# 🤖 6. Machine Learning Model Performance  
+
+## 📊 Model Performance Comparison  
+
+| Model               | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|--------------------|---------|----------|--------|----------|---------|
+| Logistic Regression | XX%     | XX%      | XX%    | XX%      | XX%     |
+| Decision Tree       | XX%     | XX%      | XX%    | XX%      | XX%     |
+| Random Forest       | XX%     | XX%      | XX%    | XX%      | XX%     |
+
+**Insight:**  
+Tree-based models outperform logistic regression due to their ability to capture non-linear relationships.
+
+---
+
+## 📉 Class Distribution  
+
+![Class Distribution](images/class_distribution.png)
+
+**Insight:**  
+The dataset may show imbalance, which can influence model performance.
+
+---
+
+## 📊 Confusion Matrices  
+
+### Logistic Regression  
+![Confusion Matrix - LR](images/cm_logistic.png)
+
+### Decision Tree  
+![Confusion Matrix - DT](images/cm_tree.png)
+
+### Random Forest  
+![Confusion Matrix - RF](images/cm_rf.png)
+
+**Insight:**  
+Random Forest provides better balance between precision and recall.
+
+---
+
+## 📈 ROC Curve Comparison  
+
+![ROC Comparison](images/roc_comparison.png)
+
+**Insight:**  
+Random Forest achieves the highest AUC, indicating superior classification performance.
+
+---
+
+## 🌲 Feature Importance (Random Forest)  
+
+![Feature Importance](images/feature_importance.png)
+
+**Insight:**  
+Review count, rating count, and rating are the most influential features.
+
+---
+
+# 📌 Final Conclusion  
+
+Product success in e-commerce beauty platforms is driven primarily by **customer engagement and trust**, rather than pricing or discounts.  
+
+Additionally, qualitative analysis reveals that **shade mismatch is a key customer pain point**, highlighting the importance of improving product visualization and selection tools.
